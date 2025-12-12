@@ -5,38 +5,116 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
   
   <title>Frontend Mentor | Loopstudios landing page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-  About
-  Careers
-  Events
-  Products
-  Support
 
-  Immersive experiences that deliver
+  <section class="">
+    <div class="contenedor">
+      <header class="cabecera">
+        <a href="#" class="logo">
+          <img src="images/logo.svg">
+        </a>
 
-  The leader in interactive VR
 
-  Founded in 2011, Loopstudios has been producing world-class virtual reality 
-  projects for some of the best companies around the globe. Our award-winning 
-  creations have transformed businesses through digital experiences that bind 
-  to their brand.
+        <nav class="navegacion">
+          <a href="#" class="link-navegacion">About</a>
+          <a href="#" class="link-navegacion">Careers</a>
+          <a href="#" class="link-navegacion">Events</a>
+          <a href="#" class="link-navegacion">Products</a>
+          <a href="#" class="link-navegacion">Support</a>
+        </nav>
+      </header>
 
-  Our creations
+      <div class="contenido-hero">
+        <h1>Immersive experiences that deliver</h1>
+      </div>
+    </div>
+  </section>
 
-  See all
+  <section class="contenedor seccion-lider">
 
-  Deep earth
-  Night arcade
-  Soccer team VR
+    <div class="imagen-lider">
+      <img src="images/mobile/image-interactive.jpg" class="imagen-movil">
+      <img src="images/desktop/image-interactive.jpg" class="imagen-ordenador">
+    </div>
+     
+    
+
+    <div class="contenido-lider">
+      <h2>The leader in interactive VR</h2>
+        <p>
+        Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.
+      </p>
+    </div>
+  </section>
+
+  <section class="contenedor seccion-creaciones">
+    <div class="cabecera-creaciones">
+      <h2 class="titulo-creaciones">Our creations</h2>
+      <a href="#" class="boton-ver-todo">See all</a>
+    </div>
+    
+    <div class="galeria">
+       <article class="item-galeria">
+          <img src="images/desktop/image-deep-earth.jpg" class="imagen-ordenador">
+          <img src="images/mobile/image-deep-earth.jpg" class="imagen-movil">
+        <h3 class="nombre-creacion">Deep earth</h3>
+      </article>
+
+      <article class="item-galeria">
+          <img src="images/mobile/image-night-arcade.jpg" class="imagen-movil">
+          <img src="images/desktop/image-night-arcade.jpg" class="imagen-ordenador">
+        <h3 class="nombre-creacion">Night arcade</h3>
+      </article>
+
+       <article class="item-galeria">
+          <img src="images/mobile/image-soccer-team.jpg" class="imagen-movil">
+          <img src="images/desktop/image-soccer-team.jpg" class="imagen-ordenador">
+        <h3 class="nombre-creacion">Soccer team VR</h3>
+      </article>
+
+      <article class="item-galeria">
+          <img src="images/mobile/image-grid.jpg" class="imagen-movil">
+          <img src="images/desktop/image-grid.jpg" class="imagen-ordenador">
+        <h3 class="nombre-creacion">Soccer team VR</h3>
+      </article>
+      
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+    <footer class="pie-pagina">
+      <div class="contenedor contenido-pie-pagina">
+
+      </div>
+
+    </footer>
+
+
+
+  </section>
+
+
+
+
+  
+  
+  
   The grid
   From up above VR
   Pocket borealis
@@ -51,9 +129,5 @@
 
   © 2021 Loopstudios. All rights reserved.
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
 </body>
 </html>
