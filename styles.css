@@ -41,14 +41,10 @@ a{
     color: var(--white);
 }
 
-
-
-
 .contenedor {
     max-width: 1100px;
     width: 90%;
-    margin: 0 auto;
-    
+    margin: 0 auto;    
 }
 
 .hero{
@@ -100,10 +96,11 @@ a{
     max-width: 650px;
     margin-top: 100px;
     position: relative;
+    border:2px solid var(--white);
 }
 
 .contenido-hero h1{
-    font-family: 64px;
+    font-size: 64px;
     font-weight: 300;
 }
 
@@ -144,6 +141,233 @@ a{
 }
 
 .contenido-lider p{
-    color: var(--grey-200);
+    color: var(--black);
     line-height: 1.6; /* Esto es para la altura de la linea */
+}
+
+.seccion-creaciones{
+    padding-bottom: 100px;
+}
+
+.cabecera-creaciones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+.titulo-creaciones{
+    font-size: 48px;
+    font-weight: 300;
+}
+
+.boton-ver-todo{
+    display: inline-block;
+    border: 2px solid var(--black);
+    padding: 10px 40px;
+    letter-spacing: 5px; /*Para el espacio entre letras */
+    font-family: var(--fuente-cuerpo);
+    font-weight: 400;
+    color: var(--black);
+    background: transparent;
+}
+
+.boton-ver-todo:hover{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+.boton-ver-todo-movil{
+    display: none;
+}
+
+.galeria{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 30px;
+}
+.item-galeria{
+    position: relative;
+    height: 460px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.item-galeria img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.nombre-creacion{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: var(--white);
+    font-size: 32px;
+    font-family: var(--fuente-titulo);
+    max-width: 150px;
+    font-weight: 300;
+    line-height: 1.1;
+}
+
+.pie-pagina{
+    background-color: var(--black);
+    color: var(--white);
+    padding: 45px 0;
+}
+
+.contenido-pie-pagina{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.columna-izquierda {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-pie-pagina{
+    height: 24px;
+    width: 120px;
+}
+
+.navegacion-pie-pagina{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.link-pie-pagina{
+    color: var(--white);
+    font-size: 12px;
+}
+
+.columna-derecha{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 20px;
+}
+
+.redes-sociales{
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociales img{
+    height: 20px;
+    cursor: pointer;
+}
+
+.copyright {
+    color: var(--grey-200);
+    font-size: 10px;
+}
+
+@media (max-width: 750px){
+    .hero{
+        background-image: url("images/mobile/image-hero.jpg");
+        min-height: 600px;
+    }
+
+    .contenido-hero {
+        border: 2px solid var(--white);
+        padding: 25px;
+        max-width: 650px;
+        margin-top: 110px;
+    }
+
+    .contenido-hero h1{
+        font-size: 40px;
+    }
+
+    .seccion-lider {
+        padding: 80px 0;
+        position: static; 
+    }
+    
+    .imagen-lider{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+
+    .imagen-movil{
+        display: block;
+    }
+
+    .imagen-ordenador{
+        display: none;
+    }
+
+    .contenido-lider{
+        position: static;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .contenido-lider h2{
+        font-size: 30px;
+    }
+
+    .seccion-creaciones {
+        padding-bottom: 80px;
+    }
+
+    .cabecera-creaciones {
+        text-align: center;
+        margin-bottom: 40px;
+        display: block;
+    }
+
+    .titulo-creaciones{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+
+    .boton-ver-todo{
+        display: none;
+    }
+
+    .boton-ver-todo-movil {
+        display: block;
+        width: 180px;
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0px;
+        border: 2px solid var(--black);
+        padding: 10px 30px;
+        font-family: var(--fuente-cuerpo);
+        font-weight: 400;
+        letter-spacing: 5px;
+        text-transform: uppercase;
+        text-align: center;
+        color: var(--black);
+    }
+
+    .boton-ver-todo-movil:hover{
+        background-color: var(--black);
+        color: var(--white);
+    }
+
+    .galeria{
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .item-galeria{
+        height: 120px;
+    }
+
+
+
+
+
+
+
 }
