@@ -8,8 +8,6 @@
 
     --fuente-cuerpo: 'Alata',sans-serif;
     --fuente-titulo: 'Josefin Sans', sans-serif;
-
-
 }
 
 * {
@@ -23,7 +21,6 @@ body {
     font-size: 15px;
     background-color: var(--white);
     color: var(--black);
-
 }
 
 h1,h2,h3{
@@ -34,6 +31,10 @@ h1,h2,h3{
 img{
     max-width: 100%;
     display: block;
+}
+
+.icono-hamburguesa{
+    display: none;
 }
 
 a{
@@ -84,12 +85,8 @@ a{
 
 .menu-icono{
     display: none;
-
 }
 
-#menu-toggle{
-    display: none;
-}
 
 .contenido-hero{
     padding: 40px;
@@ -295,6 +292,11 @@ a{
         margin-bottom: 40px;
     }
 
+    .icono-hamburguesa{
+        display: flex;
+        margin-left: 100px;
+    }
+
     .imagen-movil{
         display: block;
     }
@@ -364,10 +366,41 @@ a{
         height: 120px;
     }
 
+    .nombre-creacion{
+        font-size: 22px;
+        max-width: 150px;
+    }
 
+    .pie-pagina{
+        text-align: center;
+        padding: 50px 0;
+    }
 
+    .contenido-pie-pagina{
+        align-items: center;
+        gap: 30px;
+    }
 
+    .columna-izquierda{
+        align-items: center;
+        gap: 30px;
+    }
 
+    .navegacion-pie-pagina{
+        flex-direction: column;
+        gap: 20px;
+    }
 
+    .columna-derecha {
+        align-items: center;
+        gap: 20px;
+    }
 
+    .redes-sociales {
+        justify-content: center;
+    }
+
+    .link-navegacion {
+        display: none;
+    }
 }
